@@ -1,0 +1,881 @@
+body{
+    margin: 0;
+    position: absolute;font-family: 'Comfortaa',cursive;
+}
+*{
+    box-sizing: border-box;
+}
+h1 , h2 , h3 ,p{
+    margin: 0;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* =========================== start section header =============================== */
+.header{
+    color: #fff;
+    width: 100%;
+    /*height: 74px;*/
+    background-color: #222;
+    position: fixed;
+    z-index: 100;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+}
+.header .logo img{width: 70px;margin-right: 10px;}
+.header span{
+    /*float: left;*/
+    margin-top: 5px;
+    font-family: 'Comfortaa',cursive;
+    font-size: 25px;
+}
+.header .list{
+    width: 70%;
+}
+.header .list ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.header .list ul li{
+    list-style: none;
+    padding:10px 0;
+    margin-right: 25px;
+    border-bottom:2px solid #222;
+    transition: all .5s ease-in-out;
+}
+.header .list ul li:hover{color: #65af00;border-bottom:2px solid #65af00;}
+.header .list ul .home{color: #65af00;border-bottom:2px solid #65af00;}
+
+ /* Extra small devices (phones, 600px and down) */
+@media (max-width: 780px) {
+     .header .container{
+         display: block;
+         }
+    .header .logo{
+        margin:10px auto ;
+        justify-content: center;
+    }
+   
+    .header .list {
+        width: 100%;
+    }
+    .header .list ul{
+        justify-content: center;
+}
+}
+@media (max-width: 450px){
+    .header .list ul{
+        display: block
+    }  
+}
+/* =========================== end section header =============================== */
+
+
+/* =========================== start section nav =============================== */
+.section-nav{
+    padding: 77px 0;
+    animation: move 2s 1 ease-in-out;  
+}
+.section-nav .nav{
+    background-image: url(images/01Programming.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+    }
+   
+    100%{
+        opacity: 1;
+    }
+}
+
+.section-nav .nav h1 {
+    color: #65af00;
+    margin: 0;padding: 0;
+    font-size: 40px;
+    font-family: 'Comfortaa',cursive; 
+}
+
+.section-nav .nav p {
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    color:#fff;
+    margin-top: 20px;
+    font-family: 'Comfortaa',cursive;
+}
+@media (max-width: 450px){
+    .section-nav .nav{
+    padding-top:350px; 
+        }
+    .section-nav .nav p {
+        display: none;
+    }
+}
+@media (min-width: 450px) and (max-width: 780px) { 
+    .section-nav .nav{
+    padding-top:300px;  
+        }
+    .section-nav .nav p {
+    width:70%;
+    margin-top: 30px;
+}
+}
+
+/* =========================== end section nav =============================== */
+
+/* =========================== start section BootCode =============================== */
+.BootCode{
+    padding:0 0 60px 0;
+    text-align: center;
+}
+.BootCode h1{
+    margin: 0px;
+    font-size: 30px;
+    color: #444;
+    transition: all 1s ease-in-out;
+    animation: tada 1.5s 6 ease-in-out;
+}
+.BootCode h1 span{
+    color: #65af00
+}
+.BootCode p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #aaa;
+    transition: all 1s ease-in-out;
+    animation: tada 1.5s 6 ease-in-out;
+    
+}
+@keyframes tad { /* tada */
+  from {
+    transform:rotate3d(0, 0, 1, 3deg);
+  }
+
+  10%, 20% {
+    transform: rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform:rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform:rotate3d(0, 0, 1, 3deg);
+  }
+}
+
+/*
+@keyframes swing {
+    0%{
+        transform:rotate(5deg)
+    }
+    40%{
+        transform:rotate(15deg)
+    }
+    80%{
+        transform: rotate(-15deg)
+    }
+    100%{
+        transform:rotate(5deg)
+    }
+}
+*/
+/* =========================== end section BootCode =============================== */
+
+/* =========================== start section properties =============================== */
+.properties{
+    padding: 30px 0;
+    background-color: #65af00;
+    text-align: center;
+    color: #fff;
+    
+}
+.properties .container{
+    display: flex;
+}
+.properties .property{
+    width: 20%;
+    margin: 10px 2%;
+}
+
+.properties .property i{
+    color: #fff;
+    font-size: 50px;
+    padding: 20px 40px;
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    margin-bottom: 0px
+}
+.properties .property i:hover{
+    background-color: #fff;
+    transform: rotate(360deg);
+    color: #65af00;
+}
+.properties .property h1{
+    margin: 0;
+}
+.properties .property p{
+    color:#ccc
+}
+@media (max-width: 780px){
+    .properties .container{
+        display: block;
+        overflow: hidden;
+    }
+    .properties .property{
+        width: 46%;
+        float: left;
+}
+}
+@media (max-width: 450px){
+    .properties .property{
+        width: 96%;
+    }
+}
+/* =========================== end section properties =============================== */
+
+/* =========================== start section client =============================== */
+.client{
+    text-align: center;
+    background: url(images/testimonial.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    min-height:400px;
+}
+.client .clientChild{
+    min-height:400px;
+    background: rgba(0,0,0,.5);
+    padding: 50px 0;
+}
+
+.client .clientChild h1{
+    font-size: 30px;
+}
+.client .clientChild  p{
+   font-size: 20px; 
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+.client .clientChild h4{
+    color: #65af00;
+    transition: all .5s ease-in-out;
+}
+.client .clientChild h4:hover{cursor: pointer;transform: scaleX(1.5);transform: scaleY(1.5)}
+.client .clientChild .img{
+    width: 80px;
+    height: 80px; 
+    margin: auto;
+}
+.client .clientChild .person{
+    backface-visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+.client .clientChild .img img{
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #eee;
+    opacity:.5; 
+    transition: all 1s ease-in-out;
+}
+.client .clientChild .img img:hover{opacity: 1;cursor: pointer;transform: scaleX(1.5);transform: scaleY(1.5)}
+
+@media (max-width: 780px){
+    .client,
+.client .clientChild{
+    min-height:500px;
+    }
+    .client .clientChild h1{
+        margin-top: 20px
+}   
+}
+@media (max-width: 450px){
+    .client,
+.client .clientChild{
+    min-height:500px;
+    }
+    .client .clientChild h1{
+        margin-top:10px
+}
+    .client .clientChild  p{
+   font-size: 15px; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+}    
+}
+/* =========================== end section client =============================== */
+
+/* =========================== start section Price_Plan =============================== */
+.MyPrice_Plan{
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+.MyPrice_Plan .container{display: flex;}
+.MyPrice_Plan .price{
+    width: 22%;
+    padding: 30px 0;
+    margin:auto;
+    background-color: #fff;
+    border: 1px solid #ccc;  
+    transition: all 2s ease-in-out;
+    text-align: center;
+
+}
+.MyPrice_Plan .price h2{
+    margin: 5px 0;
+    font-size: 20px;
+}
+.MyPrice_Plan .price h2:nth-of-type(2){
+    border-radius: 50%;
+    width: 75px;
+    height: 65px;
+    padding: 15px;
+    margin: auto;
+    background-color: #ddd;
+    color: #444;
+    margin-bottom: 10px;
+    transition: all .5s ease-in-out;
+}
+.MyPrice_Plan .price h2:nth-of-type(2):hover{
+    transform: scale3d(1.1, 1.1, 1.1) rotateZ(360deg);
+}
+.MyPrice_Plan .price ul{
+    margin: 0;
+    padding: 0;
+}
+.MyPrice_Plan .price ul li{
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    color: #888;
+}
+
+.MyPrice_Plan input[type="button"]{
+        background-color: crimson;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        color: #fff
+}
+.MyPrice_Plan .first h2:first-of-type{color: #337ab7}
+.MyPrice_Plan .first input[type="button"]{background-color: #337ab7;}
+.MyPrice_Plan .first input[type="button"]:hover{background-color: #286090;cursor: pointer}
+
+
+.MyPrice_Plan .second h2:first-of-type{color: #5cb85c}
+.MyPrice_Plan .second input[type="button"]{background-color: #5cb85c}
+.MyPrice_Plan .second input[type="button"]:hover{background-color: #559103;cursor: pointer}
+
+
+.MyPrice_Plan .third h2:first-of-type{color: #f0ad4e}
+.MyPrice_Plan .third input[type="button"]{background-color: #f0ad4e;}
+.MyPrice_Plan .third input[type="button"]:hover{background-color: #ec971f;cursor: pointer}
+
+
+.MyPrice_Plan .fourth h2:first-of-type{color: #d9534f}
+.MyPrice_Plan .fourth input[type="button"]{background-color: #d9534f;}
+.MyPrice_Plan .fourth input[type="button"]:hover{background-color: #d43f3a;cursor: pointer}
+
+
+
+@media (max-width: 780px){
+    .MyPrice_Plan .container{
+        display: block;
+        overflow: hidden;
+    }
+    .MyPrice_Plan .price{
+        width: 46%;
+        margin: 10px 2%;
+        float: left;
+}
+}
+@media (max-width: 450px){
+    .MyPrice_Plan .price{
+        width: 96%;
+    }
+}
+
+
+/*
+.Price_Plan{
+    padding: 15px 0;
+    height: 640px;
+    text-align: center;
+    background-color: #f7f7f7;
+    display: none;
+}
+.Price_Plan .relative{position: relative; width: 1100px;margin: auto}
+.Price_Plan h1{margin: 30px 0;font-size: 35px; color: #444}
+.Price_Plan .section{
+    width: 23%;
+    height: 450px;
+    float: left;
+    margin: -200px 1% 10px;
+    padding-top: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: all 2s ease-in-out;
+    animation-name: movement;
+    animation-duration: 4s;   /*  ييستغرق قد ايه اثناء حركته   */
+   /* animation-iteration-count: 1;   /*  يكرر الموضوع ده كام مرة  */
+  /*  animation-direction: normal;
+     /*animation-delay: 2s;  يبدا يشتغل بعد قد ايه */
+  /*  animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    position: absolute;z-index: 2;opacity: 0
+}
+@keyframes movement{
+    0%{
+        top:-100px;opacity: 0
+    }
+    100%{
+        top: 330px;
+        opacity: 1
+    }
+}
+.Price_Plan .section:first-of-type{
+    left:0px;animation-delay:6s;
+}
+.Price_Plan .section:nth-of-type(2){
+    left: 25%;animation-delay: 7s;
+}
+.Price_Plan .section:nth-of-type(3){
+    left: 50%;animation-delay: 8s;
+}
+.Price_Plan .section:nth-of-type(4){
+    left: 75%;animation-delay: 9s;
+}
+.Price_Plan .section h2{
+    margin: 0;
+}
+.Price_Plan .section h2:nth-of-type(2){
+    border-radius: 50%;
+    width: 75px;
+    height: 65px;
+    padding: 15px;
+    margin: auto;
+    background-color: #ddd;
+    color: #444;
+    margin-bottom: 30px;
+    transition: all .5s ease-in-out;
+}
+.Price_Plan .section h2:nth-of-type(2):hover{
+    transform: scale3d(1.1, 1.1, 1.1) rotateZ(360deg);
+}
+.Price_Plan .section ul{
+    margin: 0;
+    padding: 0;
+}
+.Price_Plan .section ul li{
+    list-style: none;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    color: #888;
+}
+
+.Price_Plan .one input[type="button"]
+    , .Price_Plan .two input[type="button"] 
+    , .Price_Plan .three input[type="button"] 
+    , .Price_Plan .four input[type="button"]{
+        background-color: crimson;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 10px;
+        color: #fff
+}
+.Price_Plan .one input[type="button"]{background-color: #337ab7;}
+.Price_Plan .one input[type="button"]:hover{background-color: #286090;cursor: pointer}
+
+.Price_Plan .two input[type="button"]{background-color: #5cb85c}
+.Price_Plan .two input[type="button"]:hover{background-color: #559103;cursor: pointer}
+
+.Price_Plan .three input[type="button"]{background-color: #f0ad4e;}
+.Price_Plan .three input[type="button"]:hover{background-color: #ec971f;cursor: pointer}
+
+.Price_Plan .four input[type="button"]{background-color: #d9534f;}
+.Price_Plan .four input[type="button"]:hover{background-color: #d43f3a;cursor: pointer}
+/* =========================== end section Price_Plan =============================== */
+
+/* =========================== start section Our-Team =============================== */
+.Our-Team{
+    text-align: center;
+    color: #fff;
+    background-image: url(images/our_team.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.Our-Team .child{
+    height: 100%;
+    background:rgba(0,0,0,.7);
+    padding: 70px 0;
+}
+.Our-Team .child h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.Our-Team .container{
+    display: flex;
+}
+@keyframes opacity{
+    0%{opacity:0}
+    50%{opacity: 1}
+    100%{opacity: 0}
+}
+.Our-Team .person{
+    width: 23%;
+    margin-right: 2%;
+}
+.Our-Team .person:first-of-type{animation: opacity 3s infinite ease-in-out;animation-delay: 1s;}
+.Our-Team .person:nth-of-type(2){animation: opacity 3s infinite ease-in-out;animation-delay:1.5s;}
+.Our-Team .person:nth-of-type(3){animation: opacity 3s infinite ease-in-out;animation-delay: 2s;}
+.Our-Team .person:nth-of-type(4){animation: opacity 3s infinite ease-in-out;animation-delay: 2.5s;}
+.Our-Team .person .img{
+    width: 100%;
+    height: 170px;margin: auto;
+}
+.Our-Team .person .img img{
+    width: 85%;
+    height: 90%;
+    border-radius: 50%;
+}
+.Our-Team .person .socials{
+    margin-top: 15px;    
+}
+.Our-Team .person .socials i{transition: all .5s ease-in-out}
+.Our-Team .person .socials i:hover{
+    color: #74c800;
+    cursor: pointer;
+}
+
+@media (max-width: 780px){
+    .Our-Team .container{
+        display: block;
+        overflow: hidden;
+    }
+    .Our-Team .person{
+        width: 48%;
+        float: left;
+        margin-bottom: 25px;
+}
+}
+@media (max-width: 450px){
+    .Our-Team .person{width: 98%;}
+    .Our-Team .person .img img{width: 70%;}
+    }
+
+/* =========================== end section Our-Team =============================== */
+
+/* =========================== start section Touch =============================== */
+.Touch{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 50px 0;
+}
+.Touch h1{
+    font-size: 30px;
+    color: #555;
+}
+.Touch p{
+    color: #999;
+    font-size: 20px;
+    margin: 30px 0;
+}
+.Touch input[type="text"]{
+    width:300px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding:20px 5px;
+    border: 1px solid #ccc
+}
+.Touch button{
+    background-color: #65af00;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+}
+.Touch i{
+    background-color: #65af00;
+    font-size: 20px;
+    padding: 10px 5px;
+    color: #fff
+}
+@media (max-width: 780px){
+    .Touch input[type="text"]{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 450px){
+    .Touch input[type="text"]{
+        width:270px;
+    }
+}
+/* =========================== end section Touch =============================== */
+
+/* =========================== start section Statistics =============================== */
+.Statistics{
+    background-image: url(images/stats.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    height: 400px;
+}
+.Statistics .State{
+    background: rgba(0,0,0,.7);
+    height: 100%;
+    padding: 50px 0;
+    text-align: center
+}
+.Statistics .State .container{
+    display: flex;
+}
+.Statistics .State h1{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.Statistics .State .element{
+    margin-top: 30px;
+    width: 25%;
+}
+.Statistics .State .element i{
+    font-size: 85px;
+    margin-bottom: 5px;
+    color: #eee
+}
+.Statistics .State .element p{
+    font-size: 17px;
+    font-weight: bolder;
+    color: #eee
+}
+@media (max-width: 780px){
+    .Statistics{height: 600px;}
+    .Statistics .State .container{
+        display: block;
+    }
+    .Statistics .State .element{
+        float: left;
+        margin-top: 30px;
+        width: 50%;
+    }
+}
+@media (max-width: 450px){
+     .Statistics{height: 900px;}
+    .Statistics .State .element{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+/* =========================== end section Statistics =============================== */
+
+/* =========================== start section Skill =============================== */
+.Skill{
+    padding: 50px;
+    text-align: center;
+}
+.Skill .container{
+    display: flex;
+}
+.Skill h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #555
+}
+.Skill .left , .Skill .right{
+    float: left;
+    text-align: left;
+}
+.Skill .left{
+    width: 45%;
+    margin-right: 5%;
+}
+.Skill .left div{
+    width: 100%;
+    background-color: #eee;
+    color: #fff;
+    border-radius: 5px;
+}
+.Skill .left div span{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px 0 0  5px;
+    animation: Increasing 8s infinite ease-in-out ;
+}
+@keyframes Increasing{
+    50%{width:50%; cursor: pointer;}
+    0%,100%{width: 100%; cursor: pointer;}
+}
+.Skill .left div .span1{
+    background-color:#ec971f;
+    animation-delay: 1s;animation-delay: 1s;
+}
+.Skill .left div .span2{
+    background-color:#d9534f;animation-delay: 1.5s;
+}
+.Skill .left div .span3{
+    background-color:#5cb85c;animation-delay: 2s;
+}
+.Skill .left div .span4{
+    background-color:#337ab7;animation-delay: 2.5s;
+}
+
+.Skill .right{
+    width: 50%;
+}
+.Skill .right h2{
+    color: #777
+}
+.Skill .right p{
+    line-height: 1.7;
+    color: #888;
+    font-size: 19px;
+    margin-top: 10px;
+}
+.Skill .right input[type="button"]{
+    border: 0;
+    background-color: #337ab7;
+    padding: 10px;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.Skill .right input[type="button"]:hover{
+    background-color: #286090;
+    cursor: pointer;
+}
+@media (max-width: 780px){
+    .Skill .container{
+        display: block;
+    }
+    .Skill .left div span{
+        font-size: 15px;
+        padding: 10px 6px;
+    }
+    .Skill .left, .Skill .right{
+        width:70%;
+        float: none;
+        margin: auto
+    }
+    .Skill .right p{
+    font-size: 17px;
+}
+}
+@media (max-width: 450px){
+    .Skill .left div span{
+        font-size: 15px;
+        padding: 10px 6px;
+    }
+    .Skill .left, .Skill .right{
+        width:100%;
+    }
+}
+/* =========================== end section Skill =============================== */
+
+/* =========================== start section Tell_Us =============================== */
+.Tell_Us{
+    background-image: url(images/contact-us.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+.Tell_Us .opacity{
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    text-align: center;
+    padding: 50px 0;
+    color: #e8e8e8;
+}
+.Tell_Us .opacity i{
+    font-size: 60px;
+}
+.Tell_Us .opacity h1{
+    font-size:30px;
+}
+.Tell_Us .opacity .container{
+    display: flex;
+}
+.Tell_Us .opacity .left , .Tell_Us .opacity .right{
+    width: 50%;
+    margin-top: 50px;
+    animation: movingRight 3s 1 ease-in-out;
+}
+.Tell_Us .opacity .left input[type="text"] , .Tell_Us .opacity .right textarea{
+    width:95%;
+    background: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #e8e8e8;
+    padding: 0 15px;
+}
+.Tell_Us .opacity .right textarea{
+    height: 110px; 
+    width: 95%;
+    padding:10px 15px;margin-bottom: 17px
+}
+.Tell_Us .opacity .right input[type="button"]{
+    background-color: #65af00;
+    border: none;
+    padding: 15px;
+    color: #e8e8e8;
+    width:95%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.Tell_Us .opacity .right input[type="button"]:hover{
+    background-color: #559103;
+    cursor: pointer
+}
+@media (max-width: 450px){
+    .Tell_Us{
+    height: 700px;
+}
+    .Tell_Us .opacity .container{
+    display: block;
+}
+    .Tell_Us .opacity .left , .Tell_Us .opacity .right{
+    float: left;
+    width: 90%;
+        
+}
+  .Tell_Us .opacity .right{
+    margin-top: 5px;
+}
+}
+/* =========================== end section Tell_Us =============================== */
+
+/* =========================== start section footer =============================== */
+
+.footer{
+    padding: 20px 0;
+    text-align: center;
+    background-color: #282828;
+    color: #e8e8e8;
+}
+.footer span{
+    color: #65af00;
+    cursor: pointer;
+}
+
+/* =========================== end section footer =============================== */
+
